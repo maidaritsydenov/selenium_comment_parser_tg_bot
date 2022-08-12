@@ -1,0 +1,94 @@
+{
+	"files": [
+		{
+			"path": "info/plan.txt",
+			"bookmarks": [
+				{
+					"line": 0,
+					"column": 33,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "info/script_details.txt",
+			"bookmarks": [
+				{
+					"line": 0,
+					"column": 35,
+					"label": ""
+				},
+				{
+					"line": 10,
+					"column": 10,
+					"label": "SELENIUM: find_element_by_id"
+				},
+				{
+					"line": 11,
+					"column": 10,
+					"label": "SELENIUM: find_element_by_css_selector"
+				},
+				{
+					"line": 17,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 36,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 40,
+					"column": 10,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "scripts/selenium_client.py",
+			"bookmarks": [
+				{
+					"line": 22,
+					"column": 12,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "scripts/yt_chrome_client.py",
+			"bookmarks": [
+				{
+					"line": 10,
+					"column": 9,
+					"label": "PY::SELENIUM"
+				},
+				{
+					"line": 24,
+					"column": 1,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "scripts/telegram_bot.py",
+			"bookmarks": [
+				{
+					"line": 137,
+					"column": 14,
+					"label": "PY::TELEGRAM_BOT"
+				}
+			]
+		},
+		{
+			"path": "scripts/test_gen_messages.py",
+			"bookmarks": [
+				{
+					"line": 68,
+					"column": 24,
+					"label": "PY::TEST_GEN_MESSAGES"
+				}
+			]
+		}
+	]
+}

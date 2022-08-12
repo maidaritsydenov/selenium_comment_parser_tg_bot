@@ -1,0 +1,4 @@
+SCRIPT: Selenium enter vk script.
+
+driver = webdriver.Chrome('./chromedriver')
+driver.get("https://www.python.org")

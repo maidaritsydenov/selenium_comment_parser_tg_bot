@@ -1,0 +1,7 @@
+SCRIPT: Selenium enter vk script.
+
+driver = webdriver.Chrome('./chromedriver')
+driver.get("https://www.python.org")
+search_bar = driver.find_element_by_name("q")
+driver.find_element_by_id("gsc-i-id2")
+element.send_keys("some text")

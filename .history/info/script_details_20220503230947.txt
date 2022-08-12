@@ -1,0 +1,3 @@
+SCRIPT: Selenium enter vk script.
+
+driver = webdriver.Chrome('./chromedriver')
