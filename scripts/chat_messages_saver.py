@@ -26,7 +26,7 @@ class ChatMessagesSaver:
         # Не менять кодировку, автоматом идет cp1251,
         # для того чтобы без ошибки сообщения отправлялись в tg
         # менять encoding='utf-8' не надо
-        with open(self._save_path, 'a') as f:
+        with open(self._save_path, 'a', encoding='UTF-8') as f:
             for msg in messages:
                 if self._add_local_message(msg):
                     f.write('%s\n' % msg)

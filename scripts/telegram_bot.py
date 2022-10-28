@@ -23,7 +23,7 @@ class BotApp:
         # Прочитать файл
         # Заполнить очередь каждого пользователя - новыми строками из файла
         line = None
-        with open(PHRASES_FILE_PATH, 'r') as f:
+        with open(PHRASES_FILE_PATH, 'r', encoding='UTF-8') as f:
             while True:
                 if line:
                     for chat_id in self._phrases_by_users.keys():

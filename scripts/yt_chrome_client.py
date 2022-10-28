@@ -53,7 +53,7 @@ class _VkChromeClientPipeline(BrowserClientBasePipeline):
             'excludeSwitches', ['enable-automation']
         )
         self._chromedriver_path = (
-            "D:/ChromeDriver/chromedriver"
+            "D:/Dev_local/chromedriver_win32/chromedriver"
             # '{}/../data/chromedriver'.format(Path(__file__).parent.resolve())
         )
 
