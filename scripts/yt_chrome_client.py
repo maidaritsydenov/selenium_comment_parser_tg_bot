@@ -10,7 +10,7 @@
 '''
 import os
 from time import sleep
-# from pathlib import Path
+from pathlib import Path
 from selenium import webdriver
 from browser_client_base_pipeline import BrowserClientBasePipeline
 from chat_messages_saver import ChatMessagesSaver
@@ -53,8 +53,8 @@ class _VkChromeClientPipeline(BrowserClientBasePipeline):
             'excludeSwitches', ['enable-automation']
         )
         self._chromedriver_path = (
-            "D:/Dev_local/chromedriver_win32/chromedriver"
-            # '{}/../data/chromedriver'.format(Path(__file__).parent.resolve())
+            # "D:/Dev_local/chromedriver_win32/chromedriver"
+            '{}/../chromedriver_win32/chromedriver.exe'.format(Path(__file__).parent.resolve())
         )
 
     @_log_method
@@ -76,10 +76,14 @@ class _VkChromeClientPipeline(BrowserClientBasePipeline):
         '''
         Переместиться в трансляции.
         '''
+        # self._click_and_wait(
+        #     '#guide-button',
+        #     if_selector='#guide-button:not([pressed="true"])',
+        #     wait_selector='#guide-button[pressed="true"]'
+        # )
         self._click_and_wait(
-            '#guide-button',
-            if_selector='#guide-button:not([pressed="true"])',
-            wait_selector='#guide-button[pressed="true"]'
+            'yt-icon-button[id="guide-button"][toggleable="true"]',
+            wait_title_contains='Трансляции'
         )
         self._click_and_wait(
             'a[id="endpoint"][title="Трансляции"]',
